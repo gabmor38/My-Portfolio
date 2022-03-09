@@ -8,8 +8,11 @@ function Profile() {
       <div className = "profile-parent">
         <div className = "profile-details">
           <div className = "colz">
-            <a href="#"><i className= "fa fa-facebook-square"/></a>
-            <a href="#"><i className = "fa fa-google-plus-square"/></a>
+            <div className="colz-icon">
+              <a href="#"><i className= "fa fa-facebook-square"/></a>
+              <a href="#"><i className = "fa fa-google-plus-square"/></a>
+            </div>
+          
           </div>
             <div className ="profile-details-name">
               <span className = "primary-text">
@@ -41,6 +44,10 @@ function Profile() {
                 <button className ="btn btn-highlighted">Download Resume</button>
               </a>
             </div>
+        </div>
+        <div className="profile-picture">
+          <div className="profile-picture-background">
+          </div>
         </div>
       </div>
     </div>
