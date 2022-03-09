@@ -94,7 +94,7 @@ body ::-webkit-scrollbar-thumb {
   transform: translateY(2px);
 }
 
-.primary-btn {
+.btn-primary {
   color: var(--white);
   border: 2px solid linen;
   font-size: 12px;

@@ -1,10 +1,11 @@
 import Typical from 'react-typical'
+import './Profile.css'
 
 
 
 function Profile() {
   return (
-    <div className ="profile_container">
+    <div className ="profile-container">
       <div className = "profile-parent">
         <div className = "profile-details">
           <div className = "colz">
@@ -12,7 +13,7 @@ function Profile() {
               <a href="#"><i className= "fa fa-facebook-square"/></a>
               <a href="#"><i className = "fa fa-google-plus-square"/></a>
             </div>
-          
+
           </div>
             <div className ="profile-details-name">
               <span className = "primary-text">
