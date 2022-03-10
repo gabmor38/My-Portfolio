@@ -90,3 +90,70 @@
 .colz .colz-icon i:hover {
   transform: scale(1.5);
 }
+
+@media screen and (max-width: 1100px) and and (min-width: 913px){
+  .profile-picture-background{
+    margin: 0px 0px 0px 80px;
+  }
+  .profile-details-name {
+    font-size: 20px;
+  }
+  .profile-details-role .primary-text {
+    font-size: 12px;
+  }
+  .profile-options .btn {
+    width: 120px;
+    padding: 11px 0;
+    z-index: 700;
+  }
+}
+
+@media screen and (max-width: 912px) {
+  .profile-picture {
+    height: 320px;
+    width: 320px;
+    margin: 0 0 0 4px;
+  }
+  .profile-picture-background{
+    margin: 0px 0px 0px 0px;
+  }
+}
+
+
+@media screen and (max-width: 911px) and (min-width: 360px) {
+  .profile-parent {
+  flex-direction: column-reverse;
+  }
+
+  .profile-picture {
+    width: 175px;
+    height: 175px;
+
+  }
+  .profile-details{
+    width:90%;
+  }
+}
+
+@media screen and (max-width: 280px) {
+  .profile-parent {
+  flex-direction: column-reverse;
+  }
+
+  .profile-picture {
+    width: 175px;
+    height: 175px;
+
+  }
+  .profile-details{
+    width:90%;
+  }
+
+  .profile-options{
+    display: flex;
+  }
+  .btn {
+    width:100px;
+    padding:0px;
+  }
+}
