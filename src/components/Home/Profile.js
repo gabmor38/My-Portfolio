@@ -31,7 +31,7 @@ function Profile() {
                 steps={[
                   "Enthusiastic 😀",1000,
                   "Full Stack Developer 💻",1000,
-                  "PERN Stack Developer 😎",1000,
+                  "Based in Canada 🇨🇦",1000,
                 ]}
                 />
                 </h1>
