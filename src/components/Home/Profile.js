@@ -41,7 +41,7 @@ function Profile() {
               </span>
             </div>
             <div className="profile-options">
-              <button className="btn btn-primary">{" "} Hire Me! {" "}</button>
+              <button className="btn btn-primary">{" "} Let's Talk {" "}</button>
               <a href="resume" download ="resume.pdf">
                 <button className ="btn btn-highlighted">Download Resume</button>
               </a>
