@@ -1,5 +1,5 @@
-import Profile from './Profile';
-import Footer from '../Footer/Footer'
+import Profile from './Profile/Profile'
+import Footer from '../Footer/Footer';
 import './Home.css';
 
 export default function Home() {

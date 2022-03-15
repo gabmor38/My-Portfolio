@@ -10,9 +10,9 @@ function Profile() {
         <div className = "profile-details">
           <div className = "colz">
             <div className="colz-icon">
-              <a href="#"><i className="fa fa-github"></i></a>
+              <a href=""><i className="fa fa-github"></i></a>
               <a><i className="fa fa-linkedin"></i></a>
-              <a href="#"><i className = "fa fa-google-plus-square"/></a>
+              <a href=""><i className = "fa fa-google-plus-square" alt="google"/></a>
             </div>
 
           </div>

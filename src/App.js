@@ -1,12 +1,12 @@
 
-import Home from './components/Home/Home'
+import PortfolioContainer from './components/PortfolioContainer';
 
 import './App.css';
 
 function App() {
   return (
     <div className ="App">
-    <Home/>
+      <PortfolioContainer/>
     </div>
   );
 }
