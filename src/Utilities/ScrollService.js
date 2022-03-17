@@ -1,6 +1,7 @@
 import { Total_Screens } from "./commonUtils";
 import { Subject } from "rxjs";
 import { getElementById } from "domutils";
+import { object } from "prop-types";
 
 export default class ScrollService {
   static ScrollHandle = new ScrollService();
@@ -43,6 +44,25 @@ export default class ScrollService {
     }
   }
 
-  
-  
+
+  checkCurrentScreenViewport = (event) => {
+    if(!event || object.keys(event).length < 1)
+      return;
+    for (let screen of Total_Screens ) {
+      let screenFromDom = document.getElementById(screen.screen_name)
+      if(!screenFromDom)
+        continue;
+
+        let fullyVisible = this.isElementinView(screenFromDom, "complete");
+        let partiallyVisible = this.isElementinView(screenFromDom, "partial");
+
+        if (fullyVisible || partiallyVisible) {
+          if(partiallyVisible && !screen.alreadyRendered) {
+            
+          }
+
+        }
+      
+    }
+  }
 }
