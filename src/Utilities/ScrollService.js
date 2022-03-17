@@ -58,7 +58,17 @@ export default class ScrollService {
 
         if (fullyVisible || partiallyVisible) {
           if(partiallyVisible && !screen.alreadyRendered) {
-            
+            ScrollService.currentScreenFadeIn.next({
+              fadeInScreen: screen.screen_name
+            })
+            screen['alreadyRendered'] = true;
+            break;
+          }
+          if(fullyVisible) {
+            ScrollService.currentScreenBoradcaster.next({
+              screenInView: screen.screen_name
+            })
+            break;
           }
 
         }
