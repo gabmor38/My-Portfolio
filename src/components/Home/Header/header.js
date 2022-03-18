@@ -40,7 +40,7 @@ export default function Header() {
   return (
     <>
     <div>
-    HELLO!
+    Try again!
     </div>
     
     </>
