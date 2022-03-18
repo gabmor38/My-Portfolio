@@ -9,7 +9,7 @@ import { isFulfilled } from 'q';
 export default function Header() {
 
   const [selectedScreen, setSelectedScreen]  = useState(0);
-  const [showHeaderOptions, setHeaderOptions] = useState(false);
+  const [showHeaderOptions, setShowHeaderOptions] = useState(false);
 
   //function to updateScreen
   const UpdateCurrentScreen = (currentScreen) => {
@@ -37,10 +37,30 @@ export default function Header() {
     )
   }
 
+  const getHeaderOptionsClass = (index) => {
+    let classes = "header-option";
+    if (index < Total_Screens.length -1)
+    classes += "header-option-seperator"
+
+    if( selectedScreen === index)
+    classes += "selected-header-option"
+    return
+  }
+
+  const swithScreen = (index, screeen) => {
+    let screenComponent = document.getElementById(screeen.screen_name);
+    if(!screenComponent)
+      return;
+
+      screenComponent.scrollIntoView({ behavior: "smooth"});
+      setSelectedScreen(index);
+      setShowHeaderOptions(false);
+  };
+
   return (
     <>
     <div>
-    
+      
     </div>
     
     </>
