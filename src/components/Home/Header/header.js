@@ -22,10 +22,25 @@ export default function Header() {
 
   let currentScreenSubscription = ScrollService.currentScreenBoradcaster.subscribe(UpdateCurrentScreen)
 
+  //function to update navbar names dynamically
+
+  const getHeaderOptions = () => {
+    return (
+      Total_Screens.map((screen, i) => {
+        <div className={getHeaderOptions(i)}
+          key={screen.screen_name}
+          onClick={()=> switchScreen(i, screen)}
+          >
+            <span>{screen.screen_name}</span>
+        </div>
+      })
+    )
+  }
+
   return (
     <>
     <div>
-
+    HELLO!
     </div>
     
     </>
