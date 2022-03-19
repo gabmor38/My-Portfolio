@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { Total_Screens, Get_Screen_Index  } from '../../../Utilities/commonUtils';
 import ScrollService from '../../../Utilities/ScrollService';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
@@ -68,10 +68,10 @@ const Header = () =>  {
             <FontAwesomeIcon className="header-hamburger-bars" icon={faBars}/>
           </div>
           <div className='header-logo'>
-            <span> GABY~</span>
+            <span>GMR</span>
           </div>
           <div className={showHeaderOptions ? "header-options show-hamburger-options" : "header-options"}>
-
+            {getHeaderOptions}
           </div>
 
         </div>
