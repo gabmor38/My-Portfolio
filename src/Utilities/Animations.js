@@ -1,4 +1,5 @@
 export default class Animations {
+
   static animations = new Animations();
 
   fadeInScreen = (screen_name) => {
@@ -6,7 +7,7 @@ export default class Animations {
     if (!screen_name || !screen)
       return;
 
-    screen.style.opacity = '5';
-    screen.style.transform = 'translateY(1px)'
+    screen.style.opacity = '1';
+    screen.style.transform = 'translateY(0px)'
   };
 }
