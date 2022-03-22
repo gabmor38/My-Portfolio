@@ -4,7 +4,7 @@ import ScrollService from '../../../Utilities/ScrollService';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import './Header.css'
-import { current } from 'immer';
+
 
 
 
@@ -32,17 +32,17 @@ const Header = () =>  {
 
   const getHeaderOptions = () => {
     return (
-      Total_Screens.map((Screen, i) => {
-        <div 
-          key={Screen.screen_name}
-          className={getHeaderOptionsClasses(i)}
-          onClick={() => switchScreen(i, Screen)}
-          >
-            <span>{Screen.screen_name}</span>
-        </div>
-      })
+        Total_Screens.map((Screen, i) => (
+            <div 
+            key={Screen.screen_name} 
+            className={getHeaderOptionsClasses(i)}
+            onClick={() => switchScreen(i, Screen)}
+            >
+                <span>{Screen.screen_name}</span>
+            </div>
+        ))
     )
-  }
+}
 
   const getHeaderOptionsClasses = (index) => {
     let classes = "header-option";
@@ -77,19 +77,19 @@ const Header = () =>  {
 
   return (
     <>
-    <div className='header-container' onClick = {() => setShowHeaderOptions(!showHeaderOptions)}>
-        <div className="header-parent">
-          <div className="header-hamburger" onClick={() => setShowHeaderOptions(!showHeaderOptions)}>
-            <FontAwesomeIcon className="header-hamburger-bars" icon={faBars}/>
-          </div>
-          <div className='header-logo'>
-            <span>GMR</span>
-          </div>
-          <div className={(showHeaderOptions) ? "header-options show-hamburger-options" : "header-options"}>
-            {getHeaderOptions()}
-          </div>
+    <div className="header-container" onClick={() => setShowHeaderOptions(!showHeaderOptions)}>
+            <div className="header-parent">
+                <div className="header-hamburger" onClick={() => setShowHeaderOptions(!showHeaderOptions)}>
+                    <FontAwesomeIcon className="header-hamburger-bars" icon={faBars} />
+                </div>
+                <div className="header-logo">
+                    <span>NAMELOGO.</span>
+                </div>
+                <div className={(showHeaderOptions) ? "header-options show-hamburger-options" : "header-options"}>
+                    {getHeaderOptions()}
+                </div>
+            </div>
         </div>
-    </div> 
     </>
   );
 }
