@@ -1,4 +1,4 @@
-
+import ScreenHeading from "./ScreenHeading.css";
 
 export default function ScreenHeading(props) {
   return (
