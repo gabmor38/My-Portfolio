@@ -128,8 +128,8 @@ body ::-webkit-scrollbar-thumb {
   border: 1px solid var(--error-message) !important;
 }
 
-.fade-in {
+/* .fade-in {
   opacity: 0;
   transform: translateY(80px);
   transition: all 0.8s ease;
-}
+} */
