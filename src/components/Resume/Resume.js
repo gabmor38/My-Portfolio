@@ -39,6 +39,11 @@ export default function Resume(props) {
 
   ];
 
+  const skills = [
+    { skill: "Javascript",ratingPercentage: 85},
+    { skill: "React", ratingPercentage: 85},
+  ];
+
   let fadeInScreenHandler = (screen) => {
     if (screen.fadeInScreen !== props.id)
       return;
