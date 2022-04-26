@@ -44,6 +44,24 @@ export default function Resume(props) {
     { skill: "React", ratingPercentage: 85},
   ];
 
+  const projects = [
+    { title: "React Fitness",
+    duration: {fromDate:"2022", toDate: "2022" },
+    description: "A fitness website that allows a user to create workouts for various body parts",
+    subheading: "Tech stack - PERN"
+    },
+    { title: "Tweeter",
+    duration: {fromDate:"2022", toDate: "2022" },
+    description: "A fitness website that allows a user to create workouts for various body parts",
+    subheading: "Tech stack - PERN"
+    },
+    { title: "Tiny App",
+    duration: {fromDate:"2022", toDate: "2022" },
+    description: "A fitness website that allows a user to create workouts for various body parts",
+    subheading: "Tech stack - PERN"
+    },
+  ];
+
   let fadeInScreenHandler = (screen) => {
     if (screen.fadeInScreen !== props.id)
       return;
