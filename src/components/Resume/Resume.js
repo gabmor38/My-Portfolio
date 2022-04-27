@@ -120,8 +120,18 @@ export default function Resume(props) {
         ))}
       </div>,
 
-      
-
+      <div className="resume-screen-container" key="projects">
+          {projects.map((project, index) => (
+            <resumeHeading
+            key={index}
+            heading={project.title}
+            subheading={project.subheading}
+            description={project.description}
+            fromDate={project.duration.fromDate}
+            toDate={project.duration.toDate}
+            />
+          ))}
+      </div>
 
     </div>
   ];
