@@ -143,6 +143,21 @@ export default function Resume(props) {
           fromDate={"October 2019"}
           toDate={"June 2021"}
         />
+        <div className="experience-description">
+          <ul className="resume-description-text">
+            <li>Revamped SIBS intranet site.</li>
+            <li className="resume-description-text">
+            Created SQL scripts to push large amounts of data into the case management system (E&R).
+            </li>
+            <li className="resume-description-text"> Updated content and stats in internal SIBS Website.</li>
+            <li className="resume-description-text"> Created and maintained user profiles in E&R.</li>
+            <li className="resume-description-text"> Created and updated Crystal Reports.</li>
+            <li className="resume-description-text"> Created, updated, and programmed fillable Portable Document Format (PDF) forms using Adobe LiveCycle.</li>
+            <li className="resume-description-text"> Mapped XML schemas to Adobe LiveCycle forms.</li>
+            <li className="resume-description-text"> Automated workflows using Robotic Process Automation UIPath.</li>
+            <li className="resume-description-text">Provided staff with guidance and basic IT support.</li>
+          </ul>
+        </div>
       </div>
     </div>,
     /* PROGRAMMING SKILLS */
