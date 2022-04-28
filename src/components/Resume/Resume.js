@@ -10,7 +10,7 @@ export default function Resume(props) {
   const [carousalOffsetStyle, setCarousalOffsetStyle] = useState({});
 
   let fadeInScreenHandler = (screen) => {
-    if(screen.fadeInScreen !== props.id)
+    if (screen.fadeInScreen !== props.id)
       return;
 
     Animations.animations.fadeInScreen(props.id);
@@ -45,7 +45,7 @@ export default function Resume(props) {
   /* STATIC RESUME DATA */
   const resumeBullets = [
     { label: "Education", logoSrc: "education.svg" },
-    { label: "Work History", logoSrc: "work-history.svg" },
+    { label: "Experience", logoSrc: "work-history.svg" },
     { label: "Skills", logoSrc: "programming-skills.svg" },
     { label: "Projects", logoSrc: "projects.svg" },
   ];
@@ -84,7 +84,7 @@ export default function Resume(props) {
       subHeading:
         "Technologies Used: Ruby",
     },
-    
+
   ];
 
   const resumeDetails = [
@@ -107,31 +107,42 @@ export default function Resume(props) {
     <div className="resume-screen-container" key="work-experience">
       <div className="experience-container">
         <ResumeHeading
-          heading={"RCMP"}
-          subHeading={"OM-02 Business Process Analyst"}
-          fromDate={"2021"}
+          heading={"RCMP - Business Process Analysis Section"}
+          subHeading={"OM-02 - Indeterminate - Business Process Analyst"}
+          fromDate={"June 2021"}
           toDate={"Present"}
         />
         <div className="experience-description">
           <span className="resume-description-text">
-            add description of my work.
+            - Design, develop, program, and implement departmental forms using Adobe LiveCycle Designer.
           </span>
         </div>
         <div className="experience-description">
           <span className="resume-description-text">
-            - .
-          .
+            - Working with clients to create forms based on their needs and services.
           </span>
           <br />
           <span className="resume-description-text">
-            - {" "}
+            - Convert ICS forms to Adobe PDF format.
           </span>
           <br />
           <span className="resume-description-text">
-            - 
+            - Conduct Quality Assurance (QA) testing.
+          </span>
+          <br />
+          <span className="resume-description-text">
+            - Elicit and analyze client business requirements, business rules, and workflow relating to and supported by form products.
           </span>
           <br />
         </div>
+      </div>
+      <div className="experience-container">
+        <ResumeHeading
+          heading={"RCMP - SIBS"}
+          subHeading={"AS-03 - Information Systems Administrator"}
+          fromDate={"October 2019"}
+          toDate={"June 2021"}
+        />
       </div>
     </div>,
     /* PROGRAMMING SKILLS */
@@ -210,9 +221,9 @@ export default function Resume(props) {
 
   useEffect(() => {
     return () => {
-        /* UNSUBSCRIBE THE SUBSCRIPTIONS */
-        fadeInSubscription.unsubscribe();
-    }
+      /* UNSUBSCRIBE THE SUBSCRIPTIONS */
+      fadeInSubscription.unsubscribe();
+    };
   }, [fadeInSubscription]);
 
   return (
