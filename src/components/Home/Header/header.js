@@ -4,6 +4,7 @@ import ScrollService from '../../../Utilities/ScrollService';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import './Header.css'
+import '../../../assets/fonts/gabrielaMoreno.png'
 
 
 
@@ -83,7 +84,7 @@ const Header = () =>  {
                     <FontAwesomeIcon className="header-hamburger-bars" icon={faBars} />
                 </div>
                 <div className="header-logo">
-                    <span>NAMELOGO.</span>
+                    <span></span>
                 </div>
                 <div className={(showHeaderOptions) ? "header-options show-hamburger-options" : "header-options"}>
                     {getHeaderOptions()}
