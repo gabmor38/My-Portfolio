@@ -136,7 +136,8 @@ export default function Resume(props) {
           <br />
         </div>
       </div>
-      <div className="experience-container">
+      </div>,
+        <div className="resume-screen-container" key="work-experience">
         <ResumeHeading
           heading={"RCMP - SIBS"}
           subHeading={"AS-03 - Information Systems Administrator"}
@@ -147,7 +148,7 @@ export default function Resume(props) {
           <ul className="resume-description-text">
             <li>Revamped SIBS intranet site.</li>
             <li className="resume-description-text">
-            Created SQL scripts to push large amounts of data into the case management system (E&R).
+              Created SQL scripts to push large amounts of data into the case management system (E&R).
             </li>
             <li className="resume-description-text"> Updated content and stats in internal SIBS Website.</li>
             <li className="resume-description-text"> Created and maintained user profiles in E&R.</li>
@@ -158,12 +159,10 @@ export default function Resume(props) {
             <li className="resume-description-text">Provided staff with guidance and basic IT support.</li>
           </ul>
         </div>
-      </div>
-    </div>,
+      </div>,
     /* PROGRAMMING SKILLS */
     <div
-      className="resume-screen-container programming-skills-container"
-      key="programming-skills"
+      className="resume-screen-container programming-skills-container" key="programming-skills"
     >
       {programmingSkillsDetails.map((skill, index) => (
         <div className="skill-parent" key={index}>
@@ -247,7 +246,7 @@ export default function Resume(props) {
       id={props.id || ""}
     >
       <div className="resume-content">
-        <ScreenHeading title={"Resume"} subHeading={"My formal Bio Details"} />
+        <ScreenHeading title={"Resume"} />
         <div className="resume-card">
           <div className="resume-bullets">
             <div className="bullet-container">
