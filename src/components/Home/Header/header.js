@@ -4,9 +4,7 @@ import ScrollService from '../../../Utilities/ScrollService';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import './Header.css'
-import '../../../assets/fonts/gabrielaMoreno.png'
-
-
+import '../../../assets/fonts/GMR.png'
 
 
 

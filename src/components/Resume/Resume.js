@@ -61,6 +61,30 @@ export default function Resume(props) {
     { skill: "CSS", ratingPercentage: 90 },
   ];
 
+  const experienceDetails = [
+    {
+    title: "RCMP - SIBS",
+    duration: {fromDate: "October 2019", toDate: "June 2021"},
+    description: 
+    `<div className="experience-description">
+      <ul className="resume-description-text">
+       <li>Revamped SIBS intranet site.</li>
+       <li className="resume-description-text">
+        Created SQL scripts to push large amounts of data into the case management system (E&R).
+        </li>
+        <li className="resume-description-text"> Updated content and stats in internal SIBS Website.</li>
+        <li className="resume-description-text"> Created and maintained user profiles in E&R.</li>
+        <li className="resume-description-text"> Created and updated Crystal Reports.</li>
+        <li className="resume-description-text"> Created, updated, and programmed fillable Portable Document Format (PDF) forms using Adobe LiveCycle.</li>
+        <li className="resume-description-text"> Mapped XML schemas to Adobe LiveCycle forms.</li>
+        <li className="resume-description-text"> Automated workflows using Robotic Process Automation UIPath.</li>
+       <li className="resume-description-text">Provided staff with guidance and basic IT support.</li>
+      </ul>
+    </div>`,
+    subHeading: "AS-03 - Information Systems Administrator",
+    }
+  ]
+
   const projectsDetails = [
     {
       title: "React Fitness",
@@ -84,6 +108,10 @@ export default function Resume(props) {
       subHeading:
         "Technologies Used: Ruby",
     },
+
+  ];
+
+  const educationDetails = [
 
   ];
 
@@ -136,30 +164,9 @@ export default function Resume(props) {
           <br />
         </div>
       </div>
-      </div>,
-        <div className="resume-screen-container" key="work-experience">
-        <ResumeHeading
-          heading={"RCMP - SIBS"}
-          subHeading={"AS-03 - Information Systems Administrator"}
-          fromDate={"October 2019"}
-          toDate={"June 2021"}
-        />
-        <div className="experience-description">
-          <ul className="resume-description-text">
-            <li>Revamped SIBS intranet site.</li>
-            <li className="resume-description-text">
-              Created SQL scripts to push large amounts of data into the case management system (E&R).
-            </li>
-            <li className="resume-description-text"> Updated content and stats in internal SIBS Website.</li>
-            <li className="resume-description-text"> Created and maintained user profiles in E&R.</li>
-            <li className="resume-description-text"> Created and updated Crystal Reports.</li>
-            <li className="resume-description-text"> Created, updated, and programmed fillable Portable Document Format (PDF) forms using Adobe LiveCycle.</li>
-            <li className="resume-description-text"> Mapped XML schemas to Adobe LiveCycle forms.</li>
-            <li className="resume-description-text"> Automated workflows using Robotic Process Automation UIPath.</li>
-            <li className="resume-description-text">Provided staff with guidance and basic IT support.</li>
-          </ul>
-        </div>
-      </div>,
+    </div>, 
+    
+   
     /* PROGRAMMING SKILLS */
     <div
       className="resume-screen-container programming-skills-container" key="programming-skills"
